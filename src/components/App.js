@@ -16,15 +16,15 @@ function App() {
         setBotCollection(bots)
       })
       //catching errors
-      .catch(error) => {
-        console.log(error.message)
-      }
+      // .catch(error) => {
+      //   console.log(error.message)
+      // }
   }, [checkBotCollection]) //setting the effect to check bot collection fetched
   
   return (
     <div className="App">
       <BotsPage 
-      {/*seting props */}
+      
       botCollection = {botCollection}
       setBotCollection = {setBotCollection}
       setCheckBotCollection = {setCheckBotCollection}
